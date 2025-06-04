@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Al-Kawthar University - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 0.7s;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    .feature-icon {
+      width: 300px;
+      height: 200px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Al-Kawthar University</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about/mission.html">Mission</a></li>
+            <li><a class="dropdown-item" href="about/vision.html">Vision</a></li>
+            <li><a class="dropdown-item" href="about/core-values.html">Core Values</a></li>
+            <li><a class="dropdown-item" href="about/future.html">Future</a></li>
+            <li><a class="dropdown-item" href="about/inspiration.html">Inspiration</a></li>
+            <li><a class="dropdown-item" href="about/leadership.html">Leadership</a></li>
+            <li><a class="dropdown-item" href="about/management.html">Management</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="policy.html">Policy</a></li>
+        <li class="nav-item"><a class="nav-link" href="qec.html">QEC</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero mb-5">
+  <div class="hero-overlay"></div>
+  <div class="hero-content fade-in">
+    <h1 class="display-3 fw-bold mb-3">Welcome to Al-Kawthar University</h1>
+    <p class="lead mb-4 fs-4">Empowering Future Leaders Through Quality Education & Innovation</p>
+    <a href="admissions.html" class="btn btn-primary btn-lg px-4">Apply Now</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="container mb-5">
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <img
+        src="images\Experienced-Faculty.jpg" 
+        alt="Experienced Faculty"
+        class="feature-icon"
+      />
+      <h5>Experienced Faculty</h5>
+      <p>Learn from highly qualified educators passionate about your success.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img
+        src="images\mf.png"
+        alt="Modern Facilities"
+        class="feature-icon"
+      />
+      <h5>Modern Facilities</h5>
+      <p>State-of-the-art labs, libraries, and learning environments for growth.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img
+        src="images\cp.jpg"
+        alt="Career Opportunities"
+        class="feature-icon"
+      />
+      <h5>Career Opportunities</h5>
+      <p>Strong industry links and placement support for a bright future.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Preview Section -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">About Al-Kawthar University</h2>
+    <p class="mb-4 fs-5">
+      Established in 2001, Al-Kawthar University is committed to providing world-class education in Pakistan,
+      nurturing leadership, innovation, and community service.
+    </p>
+    <a href="about/mission.html" class="btn btn-outline-primary btn-lg">Learn More</a>
+  </div>
+</section>
+
+<!-- Latest News / Events (dummy) -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Latest News & Events</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="images\ro.png" class="card-img-top" alt="News 1" />
+        <div class="card-body">
+          <h5 class="card-title">Spring Semester Registration Open</h5>
+          <p class="card-text">Register for the spring semester now and secure your seat.</p>
+          <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="News 2" />
+        <div class="card-body">
+          <h5 class="card-title">Research Symposium 2025</h5>
+          <p class="card-text">Join us for the annual research symposium showcasing student work.</p>
+          <a href="academics.html" class="btn btn-primary btn-sm">Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="images\cf.png" class="card-img-top" alt="News 3" />
+        <div class="card-body">
+          <h5 class="card-title">Career Fair 2025</h5>
+          <p class="card-text">Meet top employers and explore career opportunities.</p>
+          <a href="careers.html" class="btn btn-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Al-Kawthar University. All rights reserved.</p>
+    <small>Islamabad, Pakistan | +92-300-0000000 | info@alkawthar.edu.pk</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Auto Popup Modal -->
+<div class="modal fade" id="homepagePopup" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="popupLabel">Welcome to Our University!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Admissions for Fall 2025 are now open!<br>Explore our programs and apply today.</p>
+        <img src="images/popup.jpg" alt="Admissions Open" class="img-fluid rounded">
+      </div>
+      <div class="modal-footer">
+        <a href="admissions.html" class="btn btn-success">Apply Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var popupModal = new bootstrap.Modal(document.getElementById('homepagePopup'));
+    popupModal.show();
+  });
+</script>
+
+
+</body>
+</html>
